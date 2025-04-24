@@ -1,10 +1,9 @@
 # GitHub to jsDelivr Link Converter
 This utility helps you convert various GitHub file links into jsDelivr CDN links for easy integration into your projects. Additionally, it provides an embed code for direct usage in HTML and supports generating direct links with or without the latest commit hash.
-
+![Demo Image](https://github.com/user-attachments/assets/7f3d96da-b7ba-44c5-b031-23f36efd96c6)
 ## How to Use
 
 1. Copy the GitHub file URL in one of the following formats:
-    - `https://github.com/user/repo/blob/branch/path`
     - `https://github.com/user/repo/raw/branch/path`
     - `https://github.com/user/repo/blame/branch/path`
     - `https://raw.githubusercontent.com/user/repo/branch/path`
