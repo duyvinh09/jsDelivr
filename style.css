@@ -1,0 +1,157 @@
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.copy-btn {
+    transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+    transform: scale(1.05);
+}
+
+.copy-btn.copied {
+    background-color: #10b981 !important;
+}
+
+.test-btn {
+    transition: all 0.2s ease;
+}
+
+.test-btn:hover {
+    transform: scale(1.05);
+}
+
+.toggle-btn {
+    transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+    transform: translateY(-2px);
+}
+
+.jsdelivr-delivr {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    max-width: 350px;
+    width: 90%;
+}
+
+.notification {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    animation: slideIn 0.3s ease-out forwards;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.notification.error {
+    background-color: #fee2e2;
+    border-left: 4px solid #ef4444;
+    color: #b91c1c;
+}
+
+.notification.success {
+    background-color: #dcfce7;
+    border-left: 4px solid #22c55e;
+    color: #166534;
+}
+
+.notification.warning {
+    background-color: #fef9c3;
+    border-left: 4px solid #facc15;
+    color: #854d0e;
+}
+
+.notification i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+@media (max-width: 640px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group input {
+        border-radius: 0.5rem 0.5rem 0 0 !important;
+        width: 100%;
+    }
+
+    .button-row {
+        display: flex;
+        width: 100%;
+    }
+
+    .button-row #convert-btn {
+        border-radius: 0 0 0 0.5rem !important;
+        flex: 1;
+    }
+
+    .button-row #reset-btn {
+        border-radius: 0 0 0.5rem 0 !important;
+        width: auto;
+    }
+
+    .icon-header {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .icon-header i {
+        font-size: 2rem;
+    }
+}
+@media (min-width: 641px) {
+    .input-group {
+        flex-direction: row;
+    }
+
+    .button-row {
+        display: contents;
+    }
+
+    #convert-btn {
+        border-radius: 0 !important;
+    }
+
+    #reset-btn {
+        border-radius: 0 0.5rem 0.5rem 0 !important;
+    }
+}
